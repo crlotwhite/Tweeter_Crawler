@@ -21,3 +21,9 @@ get image and video from tweeter
 6. 완료 후 폴더 열기를 누른다.
 
 7. 새로 시작할 경우 '비우기' 버튼을 사용한다. 
+
+## special thanks
+@ayamy_garubinu
+
+테스트때 사용한 트위터 계정
+전혀 안면식이 없지만 덕분에 힘을 얻었습니다.
