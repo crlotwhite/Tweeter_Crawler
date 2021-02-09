@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>266</width>
+    <height>277</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Tweeter Crawler</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>python.ico</normaloff>python.ico</iconset>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnAdd">
+    <property name="geometry">
+     <rect>
+      <x>116</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ID 추가하기</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtInput">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>11</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCrawl">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>248</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>크롤링</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnClear">
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>248</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>비우기</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOpenExplorer">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>248</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>폴더 열기</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkCheckImage">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>35</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>이미지 확인하기</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="lstUsers">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>52</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spChunk">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>11</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>200</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
