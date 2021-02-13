@@ -34,7 +34,7 @@
     <property name="geometry">
      <rect>
       <x>116</x>
-      <y>10</y>
+      <y>4</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -47,7 +47,7 @@
     <property name="geometry">
      <rect>
       <x>4</x>
-      <y>11</y>
+      <y>5</y>
       <width>113</width>
       <height>20</height>
      </rect>
@@ -96,7 +96,7 @@
     <property name="geometry">
      <rect>
       <x>6</x>
-      <y>35</y>
+      <y>33</y>
       <width>131</width>
       <height>16</height>
      </rect>
@@ -118,10 +118,10 @@
    <widget class="QSpinBox" name="spChunk">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>11</y>
+      <x>120</x>
+      <y>30</y>
       <width>42</width>
-      <height>22</height>
+      <height>20</height>
      </rect>
     </property>
     <property name="minimum">
@@ -129,6 +129,32 @@
     </property>
     <property name="maximum">
      <number>200</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSaveList">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>4</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>목록 저장</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLoadFile">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>28</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>불러오기</string>
     </property>
    </widget>
   </widget>

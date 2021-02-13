@@ -35,6 +35,12 @@ class WindowClass(QMainWindow, main_form_class):
         # 리스트 위젯 시그널
         self.lstUsers.itemDoubleClicked.connect(self.id_remove)
 
+        # 저장 버튼
+        self.btnSaveList.clicked.connect(self.save_list_to_txt)
+
+        # 불러오기
+        self.btnLoadFile.clicked.connect(self.get_list_from_file)
+
         # 폴더 생성
         if not os.path.exists(self.download_path):
             os.mkdir(self.download_path)
@@ -114,7 +120,28 @@ class WindowClass(QMainWindow, main_form_class):
 
         else:
             QMessageBox.warning(self, "It's Empty", "유저 목록이 비었습니다.")
-    
+
+    def save_list_to_txt(self):
+        if any(self.user_list):
+            with open('id.txt', 'wt') as f:
+                for user in self.user_list:
+                    f.writelines(f'{user}\n')
+
+    def get_list_from_file(self):
+        if not os.path.exists('id.txt'):
+            QMessageBox.warning(self, "It's Empty", "저장된 목록이 없습니다.")
+        else:
+            self.lstUsers.clear()
+            self.user_list.clear()
+
+            with open('id.txt', 'rt') as f:
+                lines = f.readlines()
+                for line in lines:
+                    print(line)
+                    # 리스트 박스 아이템 추가
+                    item = line.replace('\n', '')
+                    self.lstUsers.addItem(item)
+                    self.user_list.append(item)
 
 if __name__ == '__main__':
     # 참고 자료 : https://wikidocs.net/35482
